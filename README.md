@@ -48,7 +48,8 @@ Verificar los estados en dónde no estamos o los que nos va peor en comparación
 
 
 # Flujo de trabajo
-<p align=center><img src="C:\Users\Pablo\Documents\Programacion\4 Henry\D) Proyectos Individiduales\3 - Trabajo Grupal\Trabajo\Yelp-Final-Project\img-readme\Flujo_de_Trabajo.png"><p>
+<p align=center><img src="img-readme\Flujo_de_Trabajo.png"><p>
+
 
 En lo que se refiere al Stack tecnológico, nuestro cliente nos pidió hacer un análisis en base a las plataformas de reseñas Google Maps y Yelp. Para diagrama de Gannt, utilizamos la plataforma ClickUp, por su claridad, vistosidad y fácil repartición. En cuanto al EDA-ETL, los archivos de Google Maps están en formato JSON. Por otro lado, para los datasets de Yelp, tenemos tres archivos en formato JSON, uno en Python Pickle File (.pkl) y otro comprimido en formato parquet. Para su poder leerlos, utilizaremos al lenguaje de programación python, en un jupyer notebook. Serán usadas: la librería Pyarrow para leer el archivo parquet, la librería Pandas para convertirlo en un dataframe, Numpy para el área matemática, además de Matplotlib y Seaborn para la realización de gráficos en lo que se refiere al análisis exploratorio. Yfinance, para el análisis financiero de la empresa y su competencia. 
 
