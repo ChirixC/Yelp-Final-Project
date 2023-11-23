@@ -23,22 +23,31 @@ Texas Rodhouse Es de las más grandes steakhouse de los Estados Unidos, trabaja 
 # Nuestros Objetivos
 
 ## Objetivo General
-    Evaluar estado actual de la empresa buscando oportunidades de mejora
-    Evaluar estado de la competencia para ver donde se le puede robar mercado
 
-## ¿Cómo lo haremos?
+-	El objetivo principal es extraer conocimientos significativos a partir de una extensa base de datos de reviews de restaurantes. Mediante técnicas de minería de datos y análisis estadístico, buscaremos identificar patrones, tendencias y factores clave que influyan en la satisfacción del cliente y en la reputación de nuestro cliente, la cadena Texas Rodhouse. El propósito es proporcionar insights valiosos para mejorar la calidad de sus servicios, optimizar la experiencia del cliente y fortalecer la posición competitiva de los establecimientos gastronómicos, identificando posibles localidades con potencial para expandir el negocio. 
+¿Cómo lo haremos?
 
-### Objetivo 1 (Comparacion del estado actual de la empresa con las reviews)
-Establecer un modelo de NLP que devuelva la correlación entre palabras clave y rating a partir de las reseñas para determinar mejoras a implementar en los restaurantes.
-Identificar palabras clave en los comentarios menores o igual a 3 estrellas, para detectar lo que se debe mejorar.
-Identificar palabras clave en los comentarios mayores a 3 estrellas, para detectar lo que se debe mantener y potenciar.
+### Objetivo 1 (Identificar fortalezas en los mercados más pujantes)
 
-### Objetivo 2 (Comparacion con la competencia)
-Verificar los estados en dónde no estamos o los que nos va peor en comparación a la competencia para encontrar posibles oportunidades de adueñarse del mercado
+1.	Segmentación Geográfica: Identificar aquellos Estados donde los clientes tienen una mejor valoración de los servicios del cliente. Segmentar nuestros 10 mercados más pujantes a partir de las calificaciones y la valoración de los clientes.
 
-### Objetivo Plus (Comparacion en la bolsa) 
+2.	Sentimiento del Cliente: Crear un modelo de procesamiento de lenguaje natural (NLP) que muestre la relación entre palabras clave y calificaciones basándose en las reseñas, en los Estados ya filtrados anteriormente. 
 
+3.	Factores de Influencia: Detectar las palabras clave presentes en los comentarios con calificaciones superiores a 3 estrellas para identificar aspectos que deben ser preservados y fortalecidos.
 
+### Objetivo 2 (Identificar futuros mercados)
+
+1.	Evaluación de Mercados Competitivos: Analizar e identificar Estados en los que la competencia presente un desempeño sólido. Realizar un mapeo detallado de las ubicaciones donde los competidores tienen presencia exitosa.
+
+2.	Comparación con Presencia Actual: Contrastar la información obtenida con la presencia actual de sucursales en esos Estados. Identificar brechas geográficas donde la empresa no tiene presencia pero donde la competencia demuestra éxito.
+
+3.	Propuesta de Nuevas Sucursales: Formular recomendaciones estratégicas para la apertura de nuevas sucursales en aquellos Estados y localidades donde la competencia prospera y la empresa aún no tiene una presencia establecida. Evaluar el potencial de crecimiento y la viabilidad de expansión en estas áreas.
+
+### Objetivo Plus (Financiero) 
+
+1.	Evaluación del Desempeño en el Contexto del NASDAQ: Analizar el rendimiento financiero de la empresa en relación con el índice NASDAQ y el S&P 500. Comparar las tendencias y variaciones del valor de las acciones de la empresa con el comportamiento general del NASDAQ para entender la posición relativa en el mercado y la influencia de factores macroeconómicos en su desempeño. Esto proporcionará una perspectiva adicional para la toma de decisiones financieras y estratégicas.
+
+2.	Proyección de Ingresos: Estimar los ingresos potenciales derivados de la apertura de nuevas sucursales en los mercados seleccionados. Utilizar datos históricos y proyecciones de crecimiento para calcular posibles flujos de ingresos.
 
 # KPI
 
