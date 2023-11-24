@@ -22,7 +22,7 @@ Somos Data Finance, una empresa consultora que se especializa en el análisis de
 
     Sebastián Risi           - Data Engineer
 
-    Carlos Cantón            - Data Analyst
+    Carlos Cantón            - Business Analyst
 
     Pablo Robba              - Data Analyst
 
