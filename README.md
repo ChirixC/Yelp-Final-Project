@@ -51,6 +51,15 @@ Texas Rodhouse Es de las más grandes steakhouse de los Estados Unidos, trabaja 
 
 # 📈KPIs
 
+- Evolución Relativa de Cotización Bursátil (Plus)
+
+- Disminuir las brechas competitivas ( Objetivo 2)
+
+- Crecimiento de las las steakhouses en las ciudades con menos reviews de la competencia (Objetivo 2)
+
+- Disminucion del 2% trimestral de reviews negativas vs positivas=>da muestra de la  mejora de servicio (Objetivo 1)
+
+- Incremento de las reviews ya sea cuatrimestre o anual (Objetivo 1)
 
 # 📌Alcance
 
@@ -68,6 +77,19 @@ Por último, en la etapa de machine learning, utilizaremos, de nuevo, el lenguaj
 Para todo lo que es visualizaciones de datos, usaremos PowerBI, ya que es una plataforma de la que disponemos un buen manejo y, además, es gratuita, a diferencia de otras (como por ejemplo Tableau).
 
 # 📊EDA
+
+Para el EDA se realizó proceso de exploración preliminar simlar para todos los archivos. Nos encontramos, en lo que se refiere a los datasets de Google Maps, con 51 carpetas de archivos JSON (una por cada estado) y un dataset para la metadata. En lo que a Yelp se refiere, tenemos 5 archivos, 3 JSON, 1 parquet y un pkl. Decidimos no utilizar el archivo "tip.json", ya que [completar]. 
+
+Se cargaron los datos, se averiguaron: 1- El tipo de datos, 2- El porcentaje y la cantidad de nulos, 3- Los tipos de datos, 4- Revisión de duplicados y outliers. Para ello, utilizamos un [archivo con funciones de exploración de datos](https://github.com/ChirixC/Yelp-Final-Project/blob/main/Utils/helper.py), que se compone de funciones creadas específicamente para este proceso.
+
+Podemos encontrar, en lo que se refiere a Google Maps, en los archivos de reviews, una gran cantidad de valores faltantes en las columnas text (de tipo string), pics (de tipo lista), resp (de tipo diccionario) y ninguno en resto que, cabe decir, son todas de tipo de dato int (excepto, gmap_id que es de tipo str). Descubrimos que columna time contiene marcas de tiempo en milisegundos desde la época (epoch). La época se refiere al momento en el que el tiempo comenzó a contarse para sistemas informáticos, generalmente el 1 de enero de 1970 a las 00:00:00 UTC. Mas adelante podremos convertir estos datos a formatos más amigables para trabajar con ello. Existen duplicados, más no es un porcentaje significativo de los datos y en ninguno hay una gran cantidad de outliers.
+
+En lo que se refiere al dataset metadata, [completar]
+
+Los archivos de Yelp, por otro lado, se encuentran muy íntegros y se pueden apreciar en ellos una alta calidad del dato.
+
+Por último, realizamos un EDA para los archivos de YahooFinance, que contienen [completar] 
+
 
 # 📂Datos
 +   [Dataset de Google Maps](https://drive.google.com/drive/folders/1Wf7YkxA0aHI3GpoHc9Nh8_scf5BbD4DA?usp=share_link)
