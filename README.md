@@ -63,11 +63,12 @@ Texas Rodhouse Es de las más grandes steakhouse de los Estados Unidos, trabaja 
 
 # 📌Alcance
 
+Respecto al alcance de nuestro proyecto, es importante precisar en primer lugar que las métricas necesarias y el análisis general se obtendrán a partir de los datos provistos por Yelp, y consistirán en una exploración y procesamiento de las reseñas de los clientes de la cadena Texas Rodhouse. Mediante técnicas de minería de datos y análisis estadístico, buscaremos identificar patrones, tendencias y factores clave que influyan en la satisfacción del cliente y en la reputación de la empresa. El propósito es proporcionar insights valiosos para mejorar la calidad de sus servicios, optimizar la experiencia del cliente y fortalecer la posición competitiva de los establecimientos gastronómicos.
 
+El alcance temporal comprende las reseñas desde el año 2019 al 2023; esto porque consideramos importante que, ya que uno de los objetivos es la identificación de futuros mercados, se debe trabajar a partir de los datos más recientes; si tomáramos años anteriores es muy probable que la información ya esté desactualizada ya que sabemos que los mercados cambian constantemente y se ven afectados por factores macroeconómicos y sociales. El alcance geográfico se basa en los 49 estados donde Texas Rodhouse tiene presencia. Esto nos permitirá segmentar los mercados según el nivel de desempeño y satisfacción de los clientes, así como identificar brechas geográficas donde la competencia tiene ventaja y la empresa tiene oportunidad de expandirse. 
 
 # 🛠️Flujo de trabajo
 <p align=center><img src="img-readme\Flujo_de_Trabajo.png"><p>
-
 
 En lo que se refiere al Stack tecnológico, nuestro cliente nos pidió hacer un análisis en base a las plataformas de reseñas Google Maps y Yelp. Para el diagrama de Gannt, utilizamos la plataforma ClickUp, por su claridad, vistosidad y fácil repartición. En cuanto al EDA-ETL, los archivos de Google Maps están en formato JSON. Por otro lado, para los datasets de Yelp, tenemos tres archivos en formato JSON, uno en Python Pickle File (.pkl) y otro comprimido en formato parquet. Para su poder leerlos, utilizaremos al lenguaje de programación python, en un jupyer notebook. Serán usadas: la librería Pyarrow para leer el archivo parquet, la librería Pandas para convertirlo en un dataframe, Numpy para el área matemática, además de Matplotlib y Seaborn para la realización de gráficos en lo que se refiere al análisis exploratorio. Yfinance, para el análisis financiero de la empresa y su competencia. 
 
@@ -78,22 +79,20 @@ Para todo lo que es visualizaciones de datos, usaremos PowerBI, ya que es una pl
 
 # 📊EDA
 
-Para el EDA se realizó proceso de exploración preliminar simlar para todos los archivos. Nos encontramos, en lo que se refiere a los datasets de Google Maps, con 51 carpetas de archivos JSON (una por cada estado) y un dataset para la metadata. En lo que a Yelp se refiere, tenemos 5 archivos, 3 JSON, 1 parquet y un pkl. Decidimos no utilizar el archivo "tip.json", ya que [completar]. 
+Para el EDA se realizó proceso de exploración preliminar similar para todos los archivos. Nos encontramos, en lo que se refiere a los datasets de Google Maps, con 51 carpetas de archivos JSON (una por cada estado) y un dataset para la metadata. En lo que a Yelp se refiere, tenemos 5 archivos, 3 JSON, 1 parquet y un pkl. Decidimos no utilizar el archivo "checkin.json", ya que, para nuestros objetivos, no tiene importancia, ya que tiene fechas de las personas usan determinados servicios (registros en el negocio), cuestión irrelevante para nuestro trabajo. 
 
 Se cargaron los datos, se averiguaron: 1- El tipo de datos, 2- El porcentaje y la cantidad de nulos, 3- Los tipos de datos, 4- Revisión de duplicados y outliers. Para ello, utilizamos un [archivo con funciones de exploración de datos](https://github.com/ChirixC/Yelp-Final-Project/blob/main/Utils/helper.py), que se compone de funciones creadas específicamente para este proceso.
 
-Podemos encontrar, en lo que se refiere a Google Maps, en los archivos de reviews, una gran cantidad de valores faltantes en las columnas text (de tipo string), pics (de tipo lista), resp (de tipo diccionario) y ninguno en resto que, cabe decir, son todas de tipo de dato int (excepto, gmap_id que es de tipo str). Descubrimos que columna time contiene marcas de tiempo en milisegundos desde la época (epoch). La época se refiere al momento en el que el tiempo comenzó a contarse para sistemas informáticos, generalmente el 1 de enero de 1970 a las 00:00:00 UTC. Mas adelante podremos convertir estos datos a formatos más amigables para trabajar con ello. Existen duplicados, más no es un porcentaje significativo de los datos y en ninguno hay una gran cantidad de outliers.
+Podemos encontrar, en lo que se refiere a Google Maps, en los archivos de reviews, una gran cantidad de valores faltantes en las columnas text (de tipo string), pics (de tipo lista), resp (de tipo diccionario) y ninguno en resto que, cabe decir, son todas de tipo de dato int (excepto, gmap_id que es de tipo str). Descubrimos que columna time contiene marcas de tiempo en milisegundos desde la época (epoch). La época se refiere al momento en el que el tiempo comenzó a contarse para sistemas informáticos, generalmente el 1 de enero de 1970 a las 00:00:00 UTC. Más adelante podremos convertir estos datos a formatos más amigables para trabajar con ello. Existen duplicados, más no es un porcentaje significativo de los datos y en ninguno hay una gran cantidad de outliers.
 
-En lo que se refiere al dataset metadata, [completar]
+En lo que se refiere al dataset metadata, la carpeta tiene 11 archivos .json donde se dispone la metadata contiene información del comercio, incluyendo localización, atributos y categorías. Contiene muchísimos nulos en la columna price y description, y una cantidad significativa en hours, MISC, state. Tiene una cantidad baja de outliers (1.78 %) y porcentualmente baja de filas duplicadas (teniendo en cuenta el total de ellas).
 
-Los archivos de Yelp, por otro lado, se encuentran muy íntegros y se pueden apreciar en ellos una alta calidad del dato.
+Los archivos de Yelp, business.pkl contiene información del comercio, incluyendo localización, atributos y categorías; review.json, contiene las reseñas completas, incluyendo el user_id que escribió el review y el business_id por el cual se escribe la reseña; user.parquet, datos del usuario incluyendo referencias a otros usuarios amigos y a toda la metadata asociada al usuario; tip.json, consejos escritos por el usuario. Los datos, en general, se encuentran muy íntegros y se pueden apreciar en ellos una alta calidad del dato. 
 
-Por último, realizamos un EDA para los archivos de YahooFinance, que contienen [completar] 
+Por último, realizamos un EDA para los archivos de YahooFinance, contienen una calidad del dato excelente y ningún outlier.
 
 
 # 📂Datos
 +   [Dataset de Google Maps](https://drive.google.com/drive/folders/1Wf7YkxA0aHI3GpoHc9Nh8_scf5BbD4DA?usp=share_link)
 +   [Dataset de Yelp!](https://drive.google.com/drive/folders/1TI-SsMnZsNP6t930olEEWbBQdo_yuIZF?usp=sharing)
 +   [Yahoo Finance](https://finance.yahoo.com/)
-
-
