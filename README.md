@@ -65,15 +65,20 @@ Texas Rodhouse Es de las más grandes steakhouse de los Estados Unidos, trabaja 
 
 # 📈KPIs
 
-- Evolución Relativa de Cotización Bursátil (Plus)
+- Evolución Relativa de Cotización Bursátil:
+Este indicador mide la capacidad de la empresa para gestionar su cotización bursátil en comparación con el Índice de referencia, ya sea el NASDAQ o el S&P 500. Se calcula como la diferencia porcentual entre la variación de la cotización de las acciones de la empresa y la variación del índice de referencia durante un período específico. El objetivo es mejor la performance del Índice de referencia en un 5% para 2024
 
-- Disminuir las brechas competitivas ( Objetivo 2)
+- Disminuir las brechas competitivas:
+Identificar los estados dónde la competencia tenga una mejor valoración promedio que nuestro cliente por parte de los usuarios. El objetivo es reducir esta brecha en un 5% para 2024.
 
-- Crecimiento de las las steakhouses en las ciudades con menos reviews de la competencia (Objetivo 2)
+- Aumento de Valoración Social:
+Incremento de revisiones y opiniones totales para cada restaurante en comparación con el cuatrimestre anterior en un 4%. Refleja la salud social y la percepción pública de los establecimientos, proporcionando una visión precisa de la evolución de la reputación y la experiencia del cliente.
 
-- Disminucion del 2% trimestral de reviews negativas vs positivas=>da muestra de la  mejora de servicio (Objetivo 1)
+- Expansión Estratégica en Mercados Potenciales:
+Evalúa las ciudades donde la competencia presenta mejor desempeño(respecto a reviews) en las cuales nuestro cliente no está presente. El objetivo es planificar la apertura de 2 restaurantes en dichas ciudades para el 2024, ya teniendo la información de oportunidades para el crecimiento de la marca y la expansión de la presencia en ubicaciones estratégicas.
 
-- Incremento de las reviews ya sea cuatrimestre o anual (Objetivo 1)
+- Disminucion del 2% trimestral de reviews negativas en comparacion a las positivas:
+Este Kpi nos muestra la evolucion del servicio en relacion a las criticas pasadas, si disminuye la proporcion total de criticas del total de valoraciones a lo largo del tiempo reflejaria una mejora del servicio.
 
 # 📌Alcance
 
