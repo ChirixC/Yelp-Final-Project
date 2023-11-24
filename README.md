@@ -14,6 +14,20 @@ En este proyecto nos enfocaremos en este rubro, siendo nuestro empleador una cad
 
 Somos Data Finance, una empresa consultora que se especializa en el análisis de datos, donde fusionamos la potencia del Data Science con la precisión financiera y brinda posibles soluciones, mejoras de mercado. Aquí la innovación y la analítica avanzada convergen para optimizar sus operaciones y maximizar sus resultados. Incorporamos lo último en lo que refiere al análisis de datos, machine learning y tecnologias de vanguardia.
 
+## 🤜🤛Nuestro Equipo
+
+    César Chirino            - Machine Learning Engineer
+
+    Kevin Coaguila           - Machine Learning Engineer
+
+    Sebastián Risi           - Data Engineer
+
+    Carlos Cantón            - Data Analyst
+
+    Pablo Robba              - Data Analyst
+
+    Golheth Acosta           - Cloud Specialist
+
 # 📌Nuestro Cliente
 
 <p align=center><img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b0/Texas_Roadhouse.svg/1200px-Texas_Roadhouse.svg.png"><p>
