@@ -1,7 +1,7 @@
 import pandas as pd
 import os
 
-YELP_REVIEWS_PATH = '../Yelp-Data/review.parquet'
+YELP_REVIEWS_PATH = '../Yelp-Data/review.parquet'   # Modificarlo para correrlo desde la carpeta inicial
 YELP_BUSINESS_PATH = '../Yelp-Data/business-fixed.parquet'
 
 def load_files(yelp_reviews_file, yelp_business_file): # Ahora lee archivos parquet, esto se debería modificar para leer los json
