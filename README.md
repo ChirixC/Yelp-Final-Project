@@ -1,7 +1,4 @@
-<h1 align=center> <strong>Proyecto Grupal</strong> </h1>
-<h2 align="center">Data Science</h2>
-
-<p align=center><img src="https://www.palermo.edu/ingenieria/images/carreras/listado-de-carreras/data-science-500.jpg"><p>
+<h1 align=center> <strong>Proyecto Grupal: Data Science</strong> </h1>
 
 # 📌Introducción
 
