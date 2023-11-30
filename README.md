@@ -1,6 +1,8 @@
 <h1 align=center> <strong>Proyecto Grupal</strong> </h1>
 <h2 align="center">Data Science</h2>
 
+<p align=center><img src="https://www.palermo.edu/ingenieria/images/carreras/listado-de-carreras/data-science-500.jpg"><p>
+
 # 📌Introducción
 
 Estados Unidos es un país que cuenta con una gran oferta y diversidad gastronómica que reflejan las 
