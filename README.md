@@ -94,7 +94,7 @@ En lo que se refiere al Stack tecnológico, nuestro cliente nos pidió hacer un 
 Para la infraestructura de datos, utilizaremos un servicio de almacenamiento en la nube. Elegimos la plataforma de Google Cloud (GCP) debido a su buena escalabilidad, rendimiento, seguridad y sus precios flexibles.
 
 Por último, en la etapa de machine learning, utilizaremos, de nuevo, el lenguaje Python, a travez de Jupyter Notebook, Numpy y Pandas. Además, para el modelo de machine learning utilizaremos ScikitLearn.
-Para todo lo que es visualizaciones de datos, usaremos PowerBI, ya que es una plataforma de la que disponemos un buen manejo y, además, es gratuita, a diferencia de otras (como por ejemplo Tableau).
+Para todo lo que es visualizaciones de datos, usaremos Looker, ya que es una plataforma de la que disponemos un buen manejo, además, es gratuita, a diferencia de otras (como por ejemplo Tableau) y, por ultimo, encaja muy bien con el enterno con el que trabajamos (GCP).
 
 # 📊EDA
 
@@ -110,32 +110,25 @@ Los archivos de Yelp, business.pkl contiene información del comercio, incluyend
 
 Por último, realizamos un EDA para los archivos de YahooFinance, contienen una calidad del dato excelente y ningún outlier.
 
-## 💾ETL
+# 💾ETL
 
-El proceso de ETL fue realizado en Google Cloud Platform (GCP) por, como ya dijimos, su buena escalabilidad, rendimiento, seguridad y sus precios flexibles. Realizamos una carga incremental de los datos necesarios para el análisis, extraído directamente desde Google Drive. Su actualización se cada [periodo de tiempo]. Luego, mediante el servicio Cloud Functions, adaptamos distintas funciones hechas en python, que tenían como objetivo pasar los datos del storage a Big Query por un lado, y por el otro, que proceso de haga de manera automática cada vez que surja un cambio en el storage.
+El proceso de ETL fue realizado en Google Cloud Platform (GCP) por su buena escalabilidad, rendimiento, seguridad y sus precios flexibles. Realizamos una carga incremental de los datos necesarios para el análisis, extraído directamente desde Google Drive. La actualización de los datos ocurre de forma automática una vez por semana (es modificable de acuerdo a la necesidad del cliente), Luego mediante el serivcio de google Cloud Functions que nos permite crear y ejecutar funciones en python, que actúan como una pipeline entre el proceso de ETL y la disponibilidad de los datos en Big Query. De esta manera, cada vez que se produce un cambio en el storage, las funciones se encargan de pasar los datos al Big Query de forma eficiente, automática y segura.
 
 Los datos se cargan totalmente en Big Query, y desde allí, mediante consultas, se eligen los archivos a disposición del cliente. Se tomó esta decisión debido a que tenemos como objetivo que el trabajo realizado sea reutilizable en futuros clientes que vayan a necesitar del servicio.
 
-## 📑Modelo Entidad-Relación
+# 📑Modelo Entidad-Relación
 
-### Google Reviews
+<p align=center><img src="img-readme\Entidad_relación_Definitivo2.jpg"><p>
 
-<p align=center><img src="img-readme\Entidad_relación_Google.jpg" width="718" height="507"><p>
+# 🤖Machine Learning Provisorio
 
-### Yelp
-
-<p align=center><img src="img-readme\Entidad_relación_Tips.jpg"><p>
-
-## 🤖Machine Learning Provisorio
-
-### Análisis de sentimiento
+## Análisis de sentimiento
 
 Al cliente se le presentaron distintas opciones de modelos de machine learning que tiene como objeto el análisis de sentimiento de las distintas reviews de los datasets en cuestión. Se prepararon distintas muestras con datasets reducidos, a manera de muestra/ejemplo.
 
 El primero de ellos es uno realizado con la herramienta de machine learning de Google, llamado Natural Language AI. Hicimos una prueba con dataset de 100 filas, al ser gratuito hasta los 5000 unidades de análisis de texto. Al ser de un gran tamaño, el cliente tendría que pagar una alta suma de dinero para utilizar este modelo que contiene una gran cantidad de entradas (2,030 dólares por cada millón de entradas). Debido a esto, preparamos alternativas gratuitas.
 
-El segundo y tercer modelo, utilizan las librerías nltk y textblob. Ambas gratuitas y sirven para el objetivo propuesto (si bien el modelo de Google es más preciso). Queda a disposición del cliente elegir la opción que el prefiera, acorde a lo que él pueda pagar.
-
+El segundo y tercer modelo, utilizan las librerías nltk y textblob. Si bien el modelo de Google es más preciso, estas son gratuitas y sirven para el objetivo propuesto. Queda a disposición del cliente elegir la opción que el prefiera, acorde a lo que él pueda pagar.
 
 # 📂Datos
 +   [Dataset de Google Maps](https://drive.google.com/drive/folders/1Wf7YkxA0aHI3GpoHc9Nh8_scf5BbD4DA?usp=share_link)
