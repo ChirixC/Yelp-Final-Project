@@ -7,3 +7,12 @@ Notes/
 Yelp-Data/
 test.ipynb
 ETL/datasets
+df_reviews_texas_nlkt.parquet
+df_reviews_texas_TextBlob.parquet
+cloud_functions.py
+funcion_prueba.py
+funcion_prueba2.PY
+GCP_functions.ipynb
+machine_learning_gcp.ipynb
+machine_learning_sklearn.ipynb
+plantilla.py
