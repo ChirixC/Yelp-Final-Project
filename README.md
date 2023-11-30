@@ -16,17 +16,17 @@ Somos Data Finance, una empresa consultora que se especializa en el análisis de
 
 ## 🤜🤛Nuestro Equipo
 
-    César Chirino            - Machine Learning Engineer
+    César Chirino            - Data Engineer
 
-    Kevin Coaguila           - Machine Learning Engineer
+    Kevin Coaguila           - Cloud Specialist
 
-    Sebastián Risi           - Data Engineer
+    Sebastián Risi           - Bussiness Analyst 
 
-    Carlos Cantón            - Business Analyst
+    Carlos Cantón            - Data Engineer
 
-    Pablo Robba              - Data Analyst
+    Pablo Robba              - Machine Learning Engineer
 
-    Golheth Acosta           - Cloud Specialist
+    Golheth Acosta           - Data Analyst
 
 # 📌Nuestro Cliente
 
@@ -110,6 +110,15 @@ Los archivos de Yelp, business.pkl contiene información del comercio, incluyend
 
 Por último, realizamos un EDA para los archivos de YahooFinance, contienen una calidad del dato excelente y ningún outlier.
 
+## 💾ETL
+Para el proceso de 
+
+## 📑Modelo Entidad-Relación
+### Google Reviews
+<p align=center><img src="img-readme\Flujo_de_Trabajo.png"><p>
+
+### Yelp
+<p align=center><img src="img-readme\Flujo_de_Trabajo.png"><p>
 
 # 📂Datos
 +   [Dataset de Google Maps](https://drive.google.com/drive/folders/1Wf7YkxA0aHI3GpoHc9Nh8_scf5BbD4DA?usp=share_link)
