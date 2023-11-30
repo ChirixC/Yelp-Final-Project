@@ -115,10 +115,10 @@ Para el proceso de
 
 ## 📑Modelo Entidad-Relación
 ### Google Reviews
-<p align=center><img src="img-readme\Flujo_de_Trabajo.png"><p>
+<p align=center><img src="img-readme\Entidad_relación_Google.jpg"><p>
 
 ### Yelp
-<p align=center><img src="img-readme\Flujo_de_Trabajo.png"><p>
+<p align=center><img src="img-readme\Entidad_relación_Tips.jpg"><p>
 
 # 📂Datos
 +   [Dataset de Google Maps](https://drive.google.com/drive/folders/1Wf7YkxA0aHI3GpoHc9Nh8_scf5BbD4DA?usp=share_link)
