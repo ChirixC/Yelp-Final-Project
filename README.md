@@ -111,7 +111,10 @@ Los archivos de Yelp, business.pkl contiene información del comercio, incluyend
 Por último, realizamos un EDA para los archivos de YahooFinance, contienen una calidad del dato excelente y ningún outlier.
 
 ## 💾ETL
-Para el proceso de 
+
+El proceso de ETL fue realizado en Google Cloud Platform (GCP) por, como ya dijimos, su buena escalabilidad, rendimiento, seguridad y sus precios flexibles. Realizamos una carga incremental de los datos necesarios para el análisis, extraído directamente desde Google Drive. Su actualización se cada [periodo de tiempo]. Luego, mediante el servicio Cloud Functions, adaptamos distintas funciones hechas en python, que tenían como objetivo pasar los datos del storage a Big Query por un lado, y por el otro, que proceso de haga de manera automática cada vez que surja un cambio en el storage.
+
+Los datos se cargan totalmente en Big Query, y desde allí, mediante consultas, se eligen los archivos a disposición del cliente. Se tomó esta decisión debido a que tenemos como objetivo que el trabajo realizado sea reutilizable en futuros clientes que vayan a necesitar el servicio.
 
 ## 📑Modelo Entidad-Relación
 ### Google Reviews
