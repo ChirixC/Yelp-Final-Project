@@ -117,11 +117,25 @@ El proceso de ETL fue realizado en Google Cloud Platform (GCP) por, como ya diji
 Los datos se cargan totalmente en Big Query, y desde allí, mediante consultas, se eligen los archivos a disposición del cliente. Se tomó esta decisión debido a que tenemos como objetivo que el trabajo realizado sea reutilizable en futuros clientes que vayan a necesitar del servicio.
 
 ## 📑Modelo Entidad-Relación
+
 ### Google Reviews
+
 <p align=center><img src="img-readme\Entidad_relación_Google.jpg" width="718" height="507"><p>
 
 ### Yelp
-<p align=center><img src="img-readme\Entidad_relación_Tips.jpg"><p
+
+<p align=center><img src="img-readme\Entidad_relación_Tips.jpg"><p>
+
+## 🤖Machine Learning Provisorio
+
+### Análisis de sentimiento
+
+Al cliente se le presentaron distintas opciones de modelos de machine learning que tiene como objeto el análisis de sentimiento de las distintas reviews de los datasets en cuestión. Se prepararon distintas muestras con datasets reducidos, a manera de muestra/ejemplo.
+
+El primero de ellos es uno realizado con la herramienta de machine learning de Google, llamado Natural Language AI. Hicimos una prueba con dataset de 100 filas, al ser gratuito hasta los 5000 unidades de análisis de texto. Al ser de un gran tamaño, el cliente tendría que pagar una alta suma de dinero para utilizar este modelo que contiene una gran cantidad de entradas (2,030 dólares por cada millón de entradas). Debido a esto, preparamos alternativas gratuitas.
+
+El segundo y tercer modelo, utilizan las librerías nltk y textblob. Ambas gratuitas y sirven para el objetivo propuesto (si bien el modelo de Google es más preciso). Queda a disposición del cliente elegir la opción que el prefiera, acorde a lo que él pueda pagar.
+
 
 # 📂Datos
 +   [Dataset de Google Maps](https://drive.google.com/drive/folders/1Wf7YkxA0aHI3GpoHc9Nh8_scf5BbD4DA?usp=share_link)
