@@ -129,6 +129,10 @@ El primero de ellos es uno realizado con la herramienta de machine learning de G
 
 El segundo y tercer modelo, utilizan las librerías nltk y textblob. Si bien el modelo de Google es más preciso, estas son gratuitas y sirven para el objetivo propuesto. Queda a disposición del cliente elegir la opción que el prefiera, acorde a lo que él pueda pagar.
 
+# 🖥️Dashboard Provisorio
+
+<p align=center><img src="img-readme\dashboard_preliminar.jpg"><p>
+
 # 📂Datos
 +   [Dataset de Google Maps](https://drive.google.com/drive/folders/1Wf7YkxA0aHI3GpoHc9Nh8_scf5BbD4DA?usp=share_link)
 +   [Dataset de Yelp!](https://drive.google.com/drive/folders/1TI-SsMnZsNP6t930olEEWbBQdo_yuIZF?usp=sharing)
