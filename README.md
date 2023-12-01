@@ -1,5 +1,4 @@
-<h1 align=center> <strong>Proyecto Grupal</strong> </h1>
-<h2 align="center">Data Science</h2>
+<h1 align=center> <strong>Proyecto Grupal: Data Science</strong> </h1>
 
 # 📌Introducción
 
@@ -16,17 +15,17 @@ Somos Data Finance, una empresa consultora que se especializa en el análisis de
 
 ## 🤜🤛Nuestro Equipo
 
-    César Chirino            - Machine Learning Engineer
+    César Chirino            - Data Engineer
 
-    Kevin Coaguila           - Machine Learning Engineer
+    Kevin Coaguila           - Cloud Specialist
 
-    Sebastián Risi           - Data Engineer
+    Sebastián Risi           - Bussiness Analyst 
 
-    Carlos Cantón            - Business Analyst
+    Carlos Cantón            - Data Engineer
 
-    Pablo Robba              - Data Analyst
+    Pablo Robba              - Machine Learning Engineer
 
-    Golheth Acosta           - Cloud Specialist
+    Golheth Acosta           - Data Analyst
 
 # 📌Nuestro Cliente
 
@@ -89,12 +88,12 @@ El alcance temporal comprende las reseñas desde el año 2019 al 2023; esto porq
 # 🛠️Flujo de trabajo
 <p align=center><img src="img-readme\Flujo_de_Trabajo.png"><p>
 
-En lo que se refiere al Stack tecnológico, nuestro cliente nos pidió hacer un análisis en base a las plataformas de reseñas Google Maps y Yelp. Para el diagrama de Gannt, utilizamos la plataforma ClickUp, por su claridad, vistosidad y fácil repartición. En cuanto al EDA-ETL, los archivos de Google Maps están en formato JSON. Por otro lado, para los datasets de Yelp, tenemos tres archivos en formato JSON, uno en Python Pickle File (.pkl) y otro comprimido en formato parquet. Para su poder leerlos, utilizaremos al lenguaje de programación python, en un jupyer notebook. Serán usadas: la librería Pyarrow para leer el archivo parquet, la librería Pandas para convertirlo en un dataframe, Numpy para el área matemática, además de Matplotlib y Seaborn para la realización de gráficos en lo que se refiere al análisis exploratorio. Yfinance, para el análisis financiero de la empresa y su competencia. 
+En lo que se refiere al Stack tecnológico, nuestro cliente nos pidió hacer un análisis en base a las plataformas de reseñas Google Maps y Yelp. Para el diagrama de Gannt, utilizamos la plataforma Teamwork, por su claridad, vistosidad y fácil repartición. En cuanto al EDA-ETL, los archivos de Google Maps están en formato JSON. Por otro lado, para los datasets de Yelp, tenemos tres archivos en formato JSON, uno en Python Pickle File (.pkl) y otro comprimido en formato parquet. Para su poder leerlos, utilizaremos al lenguaje de programación python, en un jupyer notebook. Serán usadas: la librería Pyarrow para leer el archivo parquet, la librería Pandas para convertirlo en un dataframe, Numpy para el área matemática, además de Matplotlib y Seaborn para la realización de gráficos en lo que se refiere al análisis exploratorio. Yfinance, para el análisis financiero de la empresa y su competencia. 
 
 Para la infraestructura de datos, utilizaremos un servicio de almacenamiento en la nube. Elegimos la plataforma de Google Cloud (GCP) debido a su buena escalabilidad, rendimiento, seguridad y sus precios flexibles.
 
 Por último, en la etapa de machine learning, utilizaremos, de nuevo, el lenguaje Python, a travez de Jupyter Notebook, Numpy y Pandas. Además, para el modelo de machine learning utilizaremos ScikitLearn.
-Para todo lo que es visualizaciones de datos, usaremos PowerBI, ya que es una plataforma de la que disponemos un buen manejo y, además, es gratuita, a diferencia de otras (como por ejemplo Tableau).
+Para todo lo que es visualizaciones de datos, usaremos Looker, ya que es una plataforma de la que disponemos un buen manejo, además, es gratuita, a diferencia de otras (como por ejemplo Tableau) y, por ultimo, encaja muy bien con el enterno con el que trabajamos (GCP).
 
 # 📊EDA
 
@@ -110,6 +109,29 @@ Los archivos de Yelp, business.pkl contiene información del comercio, incluyend
 
 Por último, realizamos un EDA para los archivos de YahooFinance, contienen una calidad del dato excelente y ningún outlier.
 
+# 💾ETL
+
+El proceso de ETL fue realizado en Google Cloud Platform (GCP) por su buena escalabilidad, rendimiento, seguridad y sus precios flexibles. Realizamos una carga incremental de los datos necesarios para el análisis, extraído directamente desde Google Drive. La actualización de los datos ocurre de forma automática una vez por semana (es modificable de acuerdo a la necesidad del cliente), Luego mediante el serivcio de google Cloud Functions que nos permite crear y ejecutar funciones en python, que actúan como una pipeline entre el proceso de ETL y la disponibilidad de los datos en Big Query. De esta manera, cada vez que se produce un cambio en el storage, las funciones se encargan de pasar los datos al Big Query de forma eficiente, automática y segura.
+
+Los datos se cargan totalmente en Big Query, y desde allí, mediante consultas, se eligen los archivos a disposición del cliente. Se tomó esta decisión debido a que tenemos como objetivo que el trabajo realizado sea reutilizable en futuros clientes que vayan a necesitar del servicio.
+
+# 📑Modelo Entidad-Relación
+
+<p align=center><img src="img-readme\Entidad_relación_Definitivo2.jpg"><p>
+
+# 🤖Machine Learning Provisorio
+
+## Análisis de sentimiento
+
+Al cliente se le presentaron distintas opciones de modelos de machine learning que tiene como objeto el análisis de sentimiento de las distintas reviews de los datasets en cuestión. Se prepararon distintas muestras con datasets reducidos, a manera de ejemplo.
+
+El primero de ellos es uno realizado con la herramienta de machine learning de Google, llamado Natural Language AI. Hicimos una prueba con un dataset de 100 filas, al ser gratuito hasta los 5000 unidades de análisis de texto. Al ser el dataset del cliente de un gran tamaño, tendría que pagar una alta suma de dinero para utilizar este modelo que contisene una gran cantidad de entradas (2,030 dólares por cada millón de entradas). Debido a esto, preparamos alternativas gratuitas.
+
+El segundo y tercer modelo, utilizan las librerías nltk y textblob. Si bien el modelo de Google es más preciso, estas son gratuitas y sirven para el objetivo propuesto. Queda a disposición del cliente elegir la opción que el prefiera, acorde a lo que él pueda pagar.
+
+# 🖥️Dashboard Provisorio
+
+<p align=center><img src="img-readme\dashboard_preliminar.jpg"><p>
 
 # 📂Datos
 +   [Dataset de Google Maps](https://drive.google.com/drive/folders/1Wf7YkxA0aHI3GpoHc9Nh8_scf5BbD4DA?usp=share_link)
