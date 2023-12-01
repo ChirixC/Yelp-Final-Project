@@ -30,6 +30,7 @@ Como ejemplo, tenemos:
 
 ## Google-reviews-estados
 
+<p align="center">
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Google_Maps_Logo_2020.svg/512px-Google_Maps_Logo_2020.svg.png"  height="200">
 
 Los archivos donde se disponibiliza las reviews de los usuarios (51 carpetas, 1 por cada estado de USA, con varios archivos .json cada uno) se conforman de la siguiente manera
@@ -58,6 +59,7 @@ Como ejemplo, tomemos un estado al azar:
 
 ## Yelp-business.pkl
 
+<p align="center">
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Yelp_Logo.svg/2560px-Yelp_Logo.svg.png"  height="200">
 
 Contiene información del comercio, incluyendo localización, atributos y categorías.
