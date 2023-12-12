@@ -42,7 +42,7 @@ Texas Roadhouse Es de las más grandes steakhouse de los Estados Unidos, trabaja
 
 ### Objetivo 1 (Identificar fortalezas en los mercados más pujantes)
 
-1.	Segmentación Geográfica: Identificar aquellos Estados donde los clientes tienen una mejor valoración de los servicios del cliente. Segmentar nuestros 10 mercados más pujantes a partir de las calificaciones y la valoración de los clientes.
+1.	Segmentación Geográfica: Identificar aquellos Estados donde los clientes tienen una mejor valoración de los servicios del cliente. Segmentar nuestros 10 mercados más pujantes a partir de las calificaciones y la valoración de los clientes, así cómo también aquellos Estados con mayor cantidad de reviews registradas. 
 
 2.	Sentimiento del Cliente: Crear un modelo de procesamiento de lenguaje natural (NLP) que muestre la relación entre palabras clave y calificaciones basándose en las reseñas, en los Estados ya filtrados anteriormente. 
 
