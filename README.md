@@ -129,9 +129,14 @@ El primero de ellos es uno realizado con la herramienta de machine learning de G
 
 El segundo y tercer modelo, utilizan las librerías nltk y textblob. Si bien el modelo de Google es más preciso, estas son gratuitas y sirven para el objetivo propuesto. Queda a disposición del cliente elegir la opción que el prefiera, acorde a lo que él pueda pagar.
 
-# 🖥️Dashboard Provisorio
+# 🖥️Dashboard
 
-<p align=center><img src="img-readme\dashboard_preliminar.jpg"><p>
+<p align=center><img src="img-readme\dash1.jpg"><p>
+<p align=center><img src="img-readme\dash2.jpg"><p>
+<p align=center><img src="img-readme\dash3.jpg"><p>
+<p align=center><img src="img-readme\dash4.jpg"><p>
+<p align=center><img src="img-readme\dash5.jpg"><p>
+<p align=center><img src="img-readme\dash6.jpg"><p>
 
 # 📂Datos
 +   [Dataset de Google Maps](https://drive.google.com/drive/folders/1Wf7YkxA0aHI3GpoHc9Nh8_scf5BbD4DA?usp=share_link)
