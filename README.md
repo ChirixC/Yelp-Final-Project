@@ -42,30 +42,33 @@ Texas Roadhouse Es de las más grandes steakhouse de los Estados Unidos, trabaja
 
 ### Objetivo 1 (Identificar fortalezas en los mercados más pujantes)
 
-1.	Segmentación Geográfica: Identificar aquellos Estados donde los clientes tienen una mejor valoración de los servicios del cliente. Segmentar nuestros 10 mercados más pujantes a partir de las calificaciones y la valoración de los clientes.
+1.	Segmentación Geográfica: Identificar aquellos Estados donde los clientes tienen una mejor valoración de los servicios del cliente. Segmentar nuestros 10 mercados más pujantes a partir de las calificaciones y la valoración de los clientes, así cómo tambien aquellos Estados con mayor cantidad de reviews. 
 
-2.	Sentimiento del Cliente: Crear un modelo de procesamiento de lenguaje natural (NLP) que muestre la relación entre palabras clave y calificaciones basándose en las reseñas, en los Estados ya filtrados anteriormente. 
+2.	Sentimiento del Cliente: Crear un modelo de procesamiento de lenguaje natural (NLP) que muestre la relación entre palabras clave y calificaciones basándose en las reseñas. 
 
-3.	Factores de Influencia: Detectar las palabras clave presentes en los comentarios con calificaciones superiores a 3 estrellas para identificar aspectos que deben ser preservados y fortalecidos.
+3.	Factores de Influencia Positivos: Detectar las palabras clave presentes en los comentarios con calificaciones superiores a 3 estrellas para identificar aspectos que deben ser preservados y fortalecidos.
+4.	Factores de Influencia Negativos: Detectar las palabras clave presentes en los comentarios con calificaciones inferiores a 3 estrellas para identificar aspectos que deben ser modificados y solucionados.
 
 ### Objetivo 2 (Identificar futuros mercados)
 
 1.	Evaluación de Mercados Competitivos: Analizar e identificar Estados en los que la competencia presente un desempeño sólido. Realizar un mapeo detallado de las ubicaciones donde los competidores tienen presencia exitosa.
 
-2.	Comparación con Presencia Actual: Contrastar la información obtenida con la presencia actual de sucursales en esos Estados. Identificar brechas geográficas donde la empresa no tiene presencia pero donde la competencia demuestra éxito.
+2.	Comparación con Presencia Actual: Contrastar la información obtenida con la presencia actual de sucursales en esos Estados. Identificar brechas geográficas donde la empresa tiene menor rating promedio que la competencia.
 
-3.	Propuesta de Nuevas Sucursales: Formular recomendaciones estratégicas para la apertura de nuevas sucursales en aquellos Estados y localidades donde la competencia prospera y la empresa aún no tiene una presencia establecida. Evaluar el potencial de crecimiento y la viabilidad de expansión en estas áreas.
+3.	Propuesta de Nuevas Sucursales: Formular recomendaciones estratégicas para la apertura de nuevas sucursales en aquellos Estados y localidades donde la competencia prospera y la empresa aún puede mejorar. Evaluar el potencial de crecimiento y la viabilidad de expansión en estas áreas.
 
 ### Objetivo Plus (Financiero) 
 
-1.	Evaluación del Desempeño en el Contexto del NASDAQ: Analizar el rendimiento financiero de la empresa en relación con el índice NASDAQ y el S&P 500. Comparar las tendencias y variaciones del valor de las acciones de la empresa con el comportamiento general del NASDAQ para entender la posición relativa en el mercado y la influencia de factores macroeconómicos en su desempeño. Esto proporcionará una perspectiva adicional para la toma de decisiones financieras y estratégicas.
+1.	Evaluación del Desempeño en el Contexto del NASDAQ: Analizar el rendimiento financiero de la empresa en relación con el índice NASDAQ. Comparar las tendencias y variaciones del valor de las acciones de la empresa con el comportamiento general del NASDAQ para entender la posición relativa en el mercado y la influencia de factores macroeconómicos en su desempeño. Esto proporcionará una perspectiva adicional para la toma de decisiones financieras y estratégicas.
 
-2.	Proyección de Ingresos: Estimar los ingresos potenciales derivados de la apertura de nuevas sucursales en los mercados seleccionados. Utilizar datos históricos y proyecciones de crecimiento para calcular posibles flujos de ingresos.
+2.	Evaluación del Desempeño del cliente vs Competencia: Analizar el rendimiento financiero de la empresa en relación con sus principales competidores. 
 
 # 📈KPIs
 
-- Evolución Relativa de Cotización Bursátil:
-Este indicador mide la capacidad de la empresa para gestionar su cotización bursátil en comparación con el Índice de referencia, ya sea el NASDAQ o el S&P 500. Se calcula como la diferencia porcentual entre la variación de la cotización de las acciones de la empresa y la variación del índice de referencia durante un período específico. El objetivo es mejor la performance del Índice de referencia en un 5% para 2024
+- Evolución de Cotización Bursátil:
+El objetivo es mejorar la performance del Índice de referencia en un 20% para 2024
+- Evolución de Cotización Bursátil vs Competencia:
+- El objetivo es mejorar la performance del ciente con respecto a los principales competidores para 2024
 
 - Aumentar las brechas competitivas:
 Identificar la valoración promedio de nuestro cliente y la competencia por parte de los usuarios. El objetivo es aumentar la brecha competitiva en un 3% para 2022.
