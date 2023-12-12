@@ -67,8 +67,8 @@ Texas Roadhouse Es de las más grandes steakhouse de los Estados Unidos, trabaja
 - Evolución Relativa de Cotización Bursátil:
 Este indicador mide la capacidad de la empresa para gestionar su cotización bursátil en comparación con el Índice de referencia, ya sea el NASDAQ o el S&P 500. Se calcula como la diferencia porcentual entre la variación de la cotización de las acciones de la empresa y la variación del índice de referencia durante un período específico. El objetivo es mejor la performance del Índice de referencia en un 5% para 2024
 
-- Disminuir las brechas competitivas:
-Identificar los estados dónde la competencia tenga una mejor valoración promedio que nuestro cliente por parte de los usuarios. El objetivo es reducir esta brecha en un 5% para 2024.
+- Aumentar las brechas competitivas:
+Identificar la valoración promedio de nuestro cliente y la competencia por parte de los usuarios. El objetivo es aumentar la brecha competitiva en un 3% para 2022.
 
 - Aumento de Valoración Social:
 Incremento de revisiones y opiniones totales para cada restaurante en comparación con el cuatrimestre anterior en un 4%. Refleja la salud social y la percepción pública de los establecimientos, proporcionando una visión precisa de la evolución de la reputación y la experiencia del cliente.
@@ -129,9 +129,14 @@ El primero de ellos es uno realizado con la herramienta de machine learning de G
 
 El segundo y tercer modelo, utilizan las librerías nltk y textblob. Si bien el modelo de Google es más preciso, estas son gratuitas y sirven para el objetivo propuesto. Queda a disposición del cliente elegir la opción que el prefiera, acorde a lo que él pueda pagar.
 
-# 🖥️Dashboard Provisorio
+# 🖥️Dashboard
 
-<p align=center><img src="img-readme\dashboard_preliminar.jpg"><p>
+<p align=center><img src="img-readme\dash1.jpg"><p>
+<p align=center><img src="img-readme\dash2.jpg"><p>
+<p align=center><img src="img-readme\dash3.jpg"><p>
+<p align=center><img src="img-readme\dash4.jpg"><p>
+<p align=center><img src="img-readme\dash5.jpg"><p>
+<p align=center><img src="img-readme\dash6.jpg"><p>
 
 # 📂Datos
 +   [Dataset de Google Maps](https://drive.google.com/drive/folders/1Wf7YkxA0aHI3GpoHc9Nh8_scf5BbD4DA?usp=share_link)
