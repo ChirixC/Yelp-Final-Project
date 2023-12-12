@@ -122,7 +122,7 @@ Los datos se cargan totalmente en Big Query, y desde allí, mediante consultas, 
 
 <p align=center><img src="img-readme\Entidad_relación_Definitivo2.jpg"><p>
 
-# 🤖Machine Learning Provisorio
+# 🤖Machine Learning 
 
 ## Análisis de sentimiento
 
